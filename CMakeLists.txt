@@ -20,7 +20,7 @@ cmake_minimum_required(VERSION 3.20)
 
 project(
     AirPodsDesktop
-    VERSION 0.4.0 # Don't forget to bump the version in `vcpkg.json` as well
+    VERSION 0.4.1 # Don't forget to bump the version in `vcpkg.json` as well
     LANGUAGES C CXX
     DESCRIPTION "AirPods desktop user experience enhancement program"
     HOMEPAGE_URL "https://github.com/SpriteOvO/AirPodsDesktop"
@@ -334,7 +334,7 @@ qt5_add_resources(APD_CODE_FILES "Source/Resource/Resource.qrc")
 #           https://stackoverflow.com/a/60848939
 #
 
-set(APD_TRANSLATION_LOCALES de_DE fr_FR ja_JP ko_KR ru_RU zh_CN)
+set(APD_TRANSLATION_LOCALES de_DE fr_FR ja_JP ko_KR ru_RU zh_CN zh_TW)
 set(APD_TS_DIR "${CMAKE_SOURCE_DIR}/Source/Resource/Translation/")
 set(APD_QM_DIR "${APD_BINARY_OUT_DIR}/translations/")
 
